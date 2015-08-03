@@ -1,0 +1,12 @@
+﻿@*
+    http://www.mikesdotnetting.com/article/274/introducing-taghelpers-in-asp-net-mvc-6
+*@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+
+
+<a asp-action="Index" asp-controller="Home">@ViewBag.Title</a>
+<a asp-action="About" asp-controller="Home">About</a>
